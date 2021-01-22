@@ -7,16 +7,18 @@ namespace OOP1
     class ProductManager
     {
         //CRUD operasyonları
+        //void değer döndürmez
         public void Add(Product product)
         {
-            product.ProductName = "Kamera";
+            Console.WriteLine(product.ProductName +" "+ "eklendi");
         }
-
-        public void Test(int sayi)
+        public void Update(Product product)
         {
-            sayi = 25;
+            Console.WriteLine(product.ProductName + " " + "güncellendi");
         }
 
-        
+       
+
+
     }
 }
