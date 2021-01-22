@@ -18,14 +18,9 @@ namespace OOP1
             //PascalCase    //camelCase
             ProductManager productManager = new ProductManager();
             productManager.Add(product1);
-            //Referans tip olduğu için Kamera yazdırdı
-            Console.WriteLine(product1.ProductName);
 
-            //değer tip olduğu için 10 yazdırdı
-            int sayi = 10;
-            productManager.Test(sayi);
-            Console.WriteLine(sayi);
-            
+           
+
         }
     }
 }
