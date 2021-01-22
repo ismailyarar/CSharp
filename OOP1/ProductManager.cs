@@ -10,13 +10,15 @@ namespace OOP1
         //void değer döndürmez
         public void Add(Product product)
         {
-            Console.WriteLine(product.ProductName + " " + "Eklendi");
+
+            Console.WriteLine(product.ProductName +" "+ "eklendi");
         }
         public void Update(Product product)
         {
-            Console.WriteLine(product.ProductName+" "+"Güncellendi");
-        }
+            Console.WriteLine(product.ProductName + " " + "güncellendi");
 
+        }
+       
        
 
 
