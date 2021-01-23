@@ -6,7 +6,8 @@ namespace OOP3
 {
     class BasvuruManager
     {
-        public void BasvuruYap(IKrediManager krediManager)
+        //Method injection
+        public void BasvuruYap(IKrediManager krediManager,List<ILoggerService> loggerServices)
         {
             //Başvuran bilgilerini değerlendir
             //Krediyi hesapla
@@ -17,6 +18,12 @@ namespace OOP3
             //doğrusu
             //istediğimiz kredi tipini gönderebiliriz
             krediManager.Hesapla();
+            //loggerService.Log();
+            foreach (var loggerService in loggerServices)
+            {
+                loggerService.Log();
+            }
+            //hangi loglama hangi kredi türü olduğuyla alakalı bilgi yok
 
         }
 
